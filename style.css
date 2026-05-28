@@ -965,6 +965,98 @@ section { padding: 88px 0; }
 .footer-bottom a { color: rgba(255,255,255,.4); }
 .footer-bottom a:hover { color: var(--sage); }
 
+/* ===== PROFILE PICTURE ===== */
+.profile-pic-circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid var(--sage);
+  box-shadow: 0 8px 32px rgba(107,143,113,.22);
+}
+.profile-pic-home {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius);
+  object-fit: cover;
+  object-position: center top;
+  box-shadow: var(--shadow);
+  display: block;
+}
+
+/* ===== HOW HOMEOPATHY HELPS WHEEL ===== */
+.wheel-section { background: var(--white); }
+.wheel-outer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+  overflow: hidden;
+}
+.wheel-graphic {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+}
+.wheel-svg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.wheel-center {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 300px;
+  left: 300px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--sage-dk);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 24px;
+  z-index: 5;
+  box-shadow: 0 6px 28px rgba(78,110,83,.45), 0 0 0 10px rgba(78,110,83,.1);
+}
+.wheel-card {
+  position: absolute;
+  width: 110px;
+  background: var(--white);
+  border: 1.5px solid var(--tan-dk);
+  border-radius: 10px;
+  padding: 13px 10px;
+  text-align: center;
+  z-index: 4;
+  box-shadow: 0 2px 14px rgba(0,0,0,.08);
+  transition: transform var(--trans), box-shadow var(--trans), border-color var(--trans);
+}
+.wheel-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 22px rgba(107,143,113,.22);
+  border-color: var(--sage);
+}
+.wc-icon { font-size: 22px; display: block; margin-bottom: 6px; }
+.wheel-card p { margin: 0; font-size: 11px; color: var(--text-lt); line-height: 1.45; }
+.wc-1 { top: 70px;  left: 245px; }
+.wc-2 { top: 141px; left: 393px; }
+.wc-3 { top: 303px; left: 430px; }
+.wc-4 { top: 431px; left: 327px; }
+.wc-5 { top: 431px; left: 163px; }
+.wc-6 { top: 303px; left: 60px;  }
+.wc-7 { top: 141px; left: 97px;  }
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .intro-grid, .about-grid { grid-template-columns: 1fr; }
@@ -979,6 +1071,11 @@ section { padding: 88px 0; }
   .contact-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .about-portrait { max-width: 360px; }
+  .wheel-graphic {
+    transform: scale(0.72);
+    transform-origin: top center;
+    margin-bottom: -168px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -991,4 +1088,9 @@ section { padding: 88px 0; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .form-row { grid-template-columns: 1fr; }
   .hero-pill { font-size: 12px; }
+  .wheel-graphic {
+    transform: scale(0.5);
+    transform-origin: top center;
+    margin-bottom: -300px;
+  }
 }
