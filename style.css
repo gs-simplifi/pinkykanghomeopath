@@ -965,6 +965,38 @@ section { padding: 88px 0; }
 .footer-bottom a { color: rgba(255,255,255,.4); }
 .footer-bottom a:hover { color: var(--sage); }
 
+/* ===== GOOGLE REVIEWS ===== */
+.reviews-section { background: var(--tan); }
+.reviews-google-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--tan-dk);
+  border-radius: var(--radius);
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: var(--shadow);
+  flex-wrap: wrap;
+}
+.rgc-left { display: flex; align-items: center; gap: 20px; }
+.rgc-logo {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: var(--cream);
+  border: 1px solid var(--tan-dk);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.rgc-info strong { display: block; font-size: 17px; color: var(--text); margin-bottom: 2px; }
+.rgc-info span  { display: block; font-size: 13px; color: var(--text-lt); margin-bottom: 6px; }
+.rgc-stars { color: #fbbc05; font-size: 20px; letter-spacing: 2px; }
+.rgc-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
 /* ===== PROFILE PICTURE ===== */
 .profile-pic-circle {
   width: 260px;
