@@ -967,6 +967,16 @@ section { padding: 88px 0; }
 
 /* ===== GOOGLE REVIEWS ===== */
 .reviews-section { background: var(--tan); }
+.review-thanks {
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+  padding: 0 12px;
+  color: var(--text);
+}
+.review-thanks p { margin: 0 0 12px; font-size: 15.5px; line-height: 1.7; color: var(--text-lt); }
+.review-thanks-lead { font-size: 18px !important; color: var(--sage-dk) !important; }
+.review-thanks-cue { font-style: italic; color: var(--text) !important; margin-top: 4px !important; }
 .reviews-google-card {
   max-width: 720px;
   margin: 0 auto;
